@@ -8,7 +8,7 @@ analysis = Analysis(
     binaries=[],
     datas=[],
     hiddenimports=[],
-    excludes=["pytest", "ruff", "PIL", "setuptools", "pip"],
+    excludes=["pytest", "ruff", "PIL", "setuptools", "pip", "yt_dlp"],
     noarchive=False,
 )
 # Windows 10/11 supplies its API sets and UCRT. The VC runtime is installed

@@ -1,3 +1,4 @@
+import re
 from dataclasses import FrozenInstanceError
 
 import pytest
@@ -38,7 +39,8 @@ def test_every_video_fallback_respects_height(core, quality, height):
     fmt = core.select_format("YouTube", quality)
     for alternative in fmt.split("/"):
         video = alternative.split("+")[0]
-        assert f"height<={height}" in video
+        match = re.search(r"height<=\??(\d+)", video)
+        assert match and int(match.group(1)) == height
 
 
 def test_command_preserves_paths_and_uses_found_ffmpeg(core, tools, tmp_path):

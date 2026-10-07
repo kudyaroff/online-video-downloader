@@ -74,7 +74,8 @@ def select_format(source: str, quality: str) -> str:
     if quality == "Best source · may need codecs":
         return "bv+ba/b"
     match = re.match(r"(\d+)p", quality)
-    limit = f"[height<={match.group(1)}]" if match else ""
+    # Direct files often have no height metadata; still cap every known height.
+    limit = f"[height<=?{match.group(1)}]" if match else ""
     if "Windows compatible" in quality:
         return (
             f"bv*{limit}[vcodec^=avc1]+ba[acodec^=mp4a]"

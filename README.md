@@ -1,6 +1,6 @@
 <h1 align="center">Video Downloader for Windows</h1>
-<p align="center">A simple Windows app for saving video and audio with yt-dlp.</p>
-<p align="center"><a href="https://github.com/kudyaroff/video-downloader-windows/releases/latest">Download for Windows</a> · <a href="docs/windows.md">Setup</a> · <a href="docs/development.md">Development</a> · <a href="LICENSE">MIT</a></p>
+<p align="center">A free Windows app for saving video and audio with yt-dlp.</p>
+<p align="center"><a href="https://github.com/kudyaroff/online_video_downloader_windows/releases/latest">Download for Windows</a> · <a href="docs/windows.md">Setup</a> · <a href="docs/development.md">Development</a> · <a href="LICENSE">MIT</a></p>
 
 ![Video Downloader](docs/assets/desktop.png)
 
@@ -13,11 +13,11 @@ Paste your links, choose the quality, and save the files to a folder. No account
 - Progress, cancellation, resume of partial downloads, and a list of failed links.
 - YouTube, Instagram, Google Drive, public Yandex Disk files, direct links, and other sites supported by yt-dlp.
 
-Support depends on the website and your installed yt-dlp version. Login requirements, removed videos, and site changes can prevent a download. Playlists and Yandex folder links are not supported. Cloud file links keep the original file; the quality limit applies to video formats, not to those original files. “Windows compatible” prefers H.264/AAC; fallback files may need another player or codec.
+Support depends on the website and your installed yt-dlp version. Login requirements, removed videos, and site changes can prevent a download. Playlists and Yandex folder links are not supported. Quality limits apply when the source reports a video's height. If it does not, the app accepts the available format, which may exceed your chosen limit. Cloud file links keep the original file. “Windows compatible” prefers H.264/AAC; fallback files may need another player or codec.
 
 ## Windows setup
 
-1. Get `Video-Downloader-Windows-x64.zip` from [Releases](https://github.com/kudyaroff/video-downloader-windows/releases/latest). Extract the whole folder.
+1. Get `Video-Downloader-Windows-x64.zip` from [Releases](https://github.com/kudyaroff/online_video_downloader_windows/releases/latest). Extract the whole folder.
 2. Install the tools below in PowerShell. Read and accept any installer agreements you agree to.
 3. Open `Video Downloader.exe`, paste your links, choose a folder, and click **Download**.
 

@@ -1,8 +1,4 @@
-# Video Downloader 0.1.0
-
-First Windows release.
-
-Paste video links, choose a quality or M4A audio, and save them to a folder. Up to four downloads can run at once. The app includes progress, cancellation and local settings.
+Fixes direct video downloads when the source does not report the video's height. Formats with a known height still respect the selected quality limit.
 
 Download `Video-Downloader-Windows-x64.zip` and extract the whole folder. Python is included. Install yt-dlp, FFmpeg/ffprobe, Deno and the Microsoft Visual C++ x64 runtime separately, following the included Windows guide.
 

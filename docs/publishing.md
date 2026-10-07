@@ -1,6 +1,6 @@
 # Publishing a release
 
-The public repository is [video-downloader-windows](https://github.com/kudyaroff/video-downloader-windows).
+The public repository is [online_video_downloader_windows](https://github.com/kudyaroff/online_video_downloader_windows).
 
 1. Update the package version and changelog. Review the licenses when changing bundled components.
 2. Run the tests and build the Windows ZIP with `scripts/build-windows.ps1`.

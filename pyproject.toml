@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "video-downloader-desktop"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple Windows desktop app for yt-dlp"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -13,7 +13,7 @@ authors = [{name = "kudyaroff"}]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest==9.1.1", "ruff==0.16.10"]
+dev = ["pytest==9.1.1", "ruff==0.16.10", "yt-dlp==2026.8.19"]
 build = ["pyinstaller==6.22.3", "pyinstaller-hooks-contrib==2026.8"]
 
 [project.gui-scripts]
