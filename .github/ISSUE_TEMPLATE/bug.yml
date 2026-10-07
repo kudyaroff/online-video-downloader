@@ -1,0 +1,25 @@
+name: Bug report
+description: Something does not work
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: Do not include cookies, private links, personal paths or downloaded copyrighted files.
+  - type: input
+    id: versions
+    attributes:
+      label: Windows, app and yt-dlp versions
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include steps, chosen quality, and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error from Activity
+      description: Remove private information first.

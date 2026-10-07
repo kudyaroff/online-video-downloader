@@ -1,0 +1,10 @@
+name: Suggestion
+description: A small improvement
+body:
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would help?
+      description: Describe the problem and a simple solution.
+    validations:
+      required: true

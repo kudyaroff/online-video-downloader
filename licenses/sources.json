@@ -1,0 +1,8 @@
+{
+  "Tcl.txt": "https://raw.githubusercontent.com/tcltk/tcl/core-8-6-15/license.terms",
+  "OpenSSL.txt": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.0.21/LICENSE.txt",
+  "zlib.txt": "https://raw.githubusercontent.com/madler/zlib/v1.3.1/LICENSE",
+  "Expat.txt": "https://raw.githubusercontent.com/libexpat/libexpat/R_2_8_2/expat/COPYING",
+  "mpdecimal.txt": "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.0.tar.gz (COPYRIGHT.txt)",
+  "libffi.txt": "https://raw.githubusercontent.com/libffi/libffi/v3.4.4/LICENSE"
+}

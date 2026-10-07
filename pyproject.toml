@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "video-downloader-desktop"
+version = "0.1.0"
+description = "A simple Windows desktop app for yt-dlp"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "kudyaroff"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "ruff==0.16.10"]
+build = ["pyinstaller==6.22.3", "pyinstaller-hooks-contrib==2026.8"]
+
+[project.gui-scripts]
+video-downloader = "video_downloader.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "--capture=sys"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
