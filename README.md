@@ -1,6 +1,6 @@
 <h1 align="center">Video Downloader for Windows</h1>
 <p align="center">A simple Windows app for saving video and audio with yt-dlp.</p>
-<p align="center"><a href="docs/windows.md">Windows setup</a> · <a href="docs/development.md">Development</a> · <a href="LICENSE">MIT</a></p>
+<p align="center"><a href="https://github.com/kudyaroff/video-downloader-windows/releases/latest">Download for Windows</a> · <a href="docs/windows.md">Setup</a> · <a href="docs/development.md">Development</a> · <a href="LICENSE">MIT</a></p>
 
 ![Video Downloader](docs/assets/desktop.png)
 
@@ -17,7 +17,7 @@ Support depends on the website and your installed yt-dlp version. Login requirem
 
 ## Windows setup
 
-1. Get the Windows ZIP from [Releases](https://github.com/kudyaroff/video-downloader-windows/releases) when a release is available. Extract the whole folder.
+1. Get `Video-Downloader-Windows-x64.zip` from [Releases](https://github.com/kudyaroff/video-downloader-windows/releases/latest). Extract the whole folder.
 2. Install the tools below in PowerShell. Read and accept any installer agreements you agree to.
 3. Open `Video Downloader.exe`, paste your links, choose a folder, and click **Download**.
 
@@ -30,7 +30,7 @@ winget install --exact --id Microsoft.VCRedist.2015+.x64 --source winget
 
 The ZIP includes Python, so you do not need to install Python for the executable. yt-dlp, FFmpeg/ffprobe, Deno and the Microsoft Visual C++ runtime are separate downloads. The runtime is often already installed. Deno helps with YouTube's JavaScript challenges.
 
-Until a release is published, use the source setup below. The executable is unsigned, so Windows may show a warning. Verify the source and the release checksum before deciding to run it; do not disable your antivirus.
+The executable is unsigned, so Windows may show a warning. Verify the source and the release checksum before deciding to run it; do not disable your antivirus.
 
 See [Windows setup](docs/windows.md) for manual installation and common errors.
 
